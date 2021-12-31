@@ -8,27 +8,43 @@
 import Foundation
 
 protocol UserRepositoryService {
-	func createUser(email: String, password: String) async throws
-	func logUser(email: String, password: String) async throws 
+    func createUser(email: String, password: String) async throws
+    func logUser(email: String, password: String) async throws
+
+    var user: User? { get }
 }
 
 final class UserRepository: UserRepositoryService {
-	let apiClient: APIClientService
 
-	init(apiClient: APIClientService) {
-		self.apiClient = apiClient
-	}
+    let apiClient: APIClientService
+    var user: User? { UserDefaultsManager.loggedUser }
+    var accessToken: String? { KeychainManager.userAccessToken }
+
+
+    init(apiClient: APIClientService) {
+        self.apiClient = apiClient
+    }
+
 }
+
 
 // MARK: - CRUD
 
 extension UserRepository {
-	
-	func createUser(email: String, password: String) async throws {
-		let loginRes: LoginRes = try await apiClient.perform(.createUser(.init(email: email, fullName: "", password: password, loginMethod: .email)))
-	}
 
-	func logUser(email: String, password: String) async throws {
-		try await apiClient.perform(.loginUser(email: email, password: password))
-	}
+    func createUser(email: String, password: String) async throws {
+        let loginRes: LoginRes = try await apiClient.perform(.createUser(.init(email: email, fullName: "", password: password, loginMethod: .email)))
+        saveUserData(loginRes)
+    }
+
+    func logUser(email: String, password: String) async throws {
+        let loginRes: LoginRes = try await apiClient.perform(.loginUser(email: email, password: password))
+        saveUserData(loginRes)
+    }
+
+    func saveUserData(_ res: LoginRes) {
+        KeychainManager.userAccessToken = res.accessToken
+        UserDefaultsManager.loggedUser = res.user
+    }
+    
 }

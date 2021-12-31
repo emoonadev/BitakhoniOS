@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Bitakhon_iOSApp: App {
+    @Resolve var initialCoordinator: InitialViewCoordinator
+
     var body: some Scene {
         WindowGroup {
-			LoginView()
+			initialCoordinator.initialView()
         }
     }
 }

@@ -16,6 +16,7 @@ extension DependencyFactory {
 
 	private func registerServices() {
 		register(APIClientService.self, instanceType: .single) { r in r.autoResolve(APIClient.init) }
+		register(InitialViewCoordinator.self, instanceType: .single) { r in r.autoResolve(InitialViewCoordinator.init) }
 	}
 
 	private func registerRepositories() {

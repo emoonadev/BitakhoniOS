@@ -35,6 +35,7 @@ struct LoginView: View {
 				viewModel.toggleSignStatus()
 			}
 			.doneAlert(item: $viewModel.currentError)
+			.handleNavigation($viewModel.navigationDirection)
 		}
 		.padding()
 	}
