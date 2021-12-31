@@ -12,8 +12,8 @@ struct LoginView: View {
 
 	// MARK: View properties
 
-	@State private var username: String = "bitakhon@gmail.com"
-	@State private var password: String = "capoeira"
+	@State private var username: String = ""
+	@State private var password: String = ""
 	@State private var isAlertPresented = false
 
 	// MARK: View
