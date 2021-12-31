@@ -7,18 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7140B4A275DE54200661B53 /* ErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7140B49275DE54200661B53 /* ErrorInfo.swift */; };
+		D7140B4E275DEBAF00661B53 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7140B4D275DEBAF00661B53 /* Alertable.swift */; };
+		D73A4A812765CACB0063CD68 /* DoneAlert.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73A4A802765CACB0063CD68 /* DoneAlert.swift.swift */; };
+		D73A4A832765CC930063CD68 /* BTSecureField.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73A4A822765CC930063CD68 /* BTSecureField.swift.swift */; };
+		D73A4A852765D1720063CD68 /* BT+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73A4A842765D1720063CD68 /* BT+String.swift */; };
 		D75798CF2759EBC70074A9D4 /* Bitakhon_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798CE2759EBC70074A9D4 /* Bitakhon_iOSApp.swift */; };
-		D75798D12759EBC70074A9D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798D02759EBC70074A9D4 /* ContentView.swift */; };
+		D75798D12759EBC70074A9D4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798D02759EBC70074A9D4 /* LoginView.swift */; };
 		D75798D32759EBC80074A9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75798D22759EBC80074A9D4 /* Assets.xcassets */; };
 		D75798D62759EBC80074A9D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75798D52759EBC80074A9D4 /* Preview Assets.xcassets */; };
+		D75798EC2759F0800074A9D4 /* CoreDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798EB2759F0800074A9D4 /* CoreDependency.swift */; };
+		D75798EE2759F0A20074A9D4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798ED2759F0A20074A9D4 /* LoginViewModel.swift */; };
+		D75798F02759F0C00074A9D4 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798EF2759F0C00074A9D4 /* DependencyInjection.swift */; };
+		D75798F5275A1E970074A9D4 /* Textfield+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798F4275A1E970074A9D4 /* Textfield+Style.swift */; };
+		D75798F7275A1FD40074A9D4 /* BTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798F6275A1FD40074A9D4 /* BTTextField.swift */; };
+		D75798FE275A23380074A9D4 /* SignStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75798FD275A23380074A9D4 /* SignStatus.swift */; };
+		D7A0FDFA275C8A7200805E9F /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FDF9275C8A7200805E9F /* UserRepository.swift */; };
+		D7A0FDFC275C8B3A00805E9F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FDFB275C8B3A00805E9F /* APIConstants.swift */; };
+		D7A0FDFE275C8B4C00805E9F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FDFD275C8B4C00805E9F /* APIClient.swift */; };
+		D7A0FE00275C8BF800805E9F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FDFF275C8BF800805E9F /* Networking.swift */; };
+		D7A0FE02275C8C2B00805E9F /* BTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE01275C8C2B00805E9F /* BTError.swift */; };
+		D7A0FE05275C8CAB00805E9F /* BTDynamicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE04275C8CAB00805E9F /* BTDynamicError.swift */; };
+		D7A0FE0A275C8E3800805E9F /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE09275C8E3800805E9F /* ServerResponse.swift */; };
+		D7A0FE0D275C90E600805E9F /* BT+DictionaryEncoder.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE0C275C90E600805E9F /* BT+DictionaryEncoder.swift.swift */; };
+		D7A0FE0F275C951700805E9F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE0E275C951700805E9F /* User.swift */; };
+		D7A0FE11275C956700805E9F /* LoginMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE10275C956700805E9F /* LoginMethod.swift */; };
+		D7A0FE13275C959D00805E9F /* LoginRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE12275C959D00805E9F /* LoginRes.swift */; };
+		D7A0FE15275C95D000805E9F /* LoginReq.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE14275C95D000805E9F /* LoginReq.swift.swift */; };
+		D7A0FE17275C9A3400805E9F /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0FE16275C9A3400805E9F /* Typealiases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7140B49275DE54200661B53 /* ErrorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorInfo.swift; sourceTree = "<group>"; };
+		D7140B4D275DEBAF00661B53 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		D73A4A802765CACB0063CD68 /* DoneAlert.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneAlert.swift.swift; sourceTree = "<group>"; };
+		D73A4A822765CC930063CD68 /* BTSecureField.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTSecureField.swift.swift; sourceTree = "<group>"; };
+		D73A4A842765D1720063CD68 /* BT+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BT+String.swift"; sourceTree = "<group>"; };
 		D75798CB2759EBC60074A9D4 /* Bitakhon iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitakhon iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75798CE2759EBC70074A9D4 /* Bitakhon_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitakhon_iOSApp.swift; sourceTree = "<group>"; };
-		D75798D02759EBC70074A9D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D75798D02759EBC70074A9D4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D75798D22759EBC80074A9D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D75798D52759EBC80074A9D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D75798EB2759F0800074A9D4 /* CoreDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDependency.swift; sourceTree = "<group>"; };
+		D75798ED2759F0A20074A9D4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D75798EF2759F0C00074A9D4 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		D75798F4275A1E970074A9D4 /* Textfield+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Textfield+Style.swift"; sourceTree = "<group>"; };
+		D75798F6275A1FD40074A9D4 /* BTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTextField.swift; sourceTree = "<group>"; };
+		D75798FD275A23380074A9D4 /* SignStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignStatus.swift; sourceTree = "<group>"; };
+		D7A0FDF9275C8A7200805E9F /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		D7A0FDFB275C8B3A00805E9F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		D7A0FDFD275C8B4C00805E9F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		D7A0FDFF275C8BF800805E9F /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D7A0FE01275C8C2B00805E9F /* BTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTError.swift; sourceTree = "<group>"; };
+		D7A0FE04275C8CAB00805E9F /* BTDynamicError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDynamicError.swift; sourceTree = "<group>"; };
+		D7A0FE09275C8E3800805E9F /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		D7A0FE0C275C90E600805E9F /* BT+DictionaryEncoder.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BT+DictionaryEncoder.swift.swift"; sourceTree = "<group>"; };
+		D7A0FE0E275C951700805E9F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D7A0FE10275C956700805E9F /* LoginMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMethod.swift; sourceTree = "<group>"; };
+		D7A0FE12275C959D00805E9F /* LoginRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRes.swift; sourceTree = "<group>"; };
+		D7A0FE14275C95D000805E9F /* LoginReq.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReq.swift.swift; sourceTree = "<group>"; };
+		D7A0FE16275C9A3400805E9F /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7140B4C275DEB3500661B53 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D7140B4D275DEBAF00661B53 /* Alertable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D73A4A7E2765CAAA0063CD68 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D73A4A7F2765CAB60063CD68 /* Alerts */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D73A4A7F2765CAB60063CD68 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				D73A4A802765CACB0063CD68 /* DoneAlert.swift.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
 		D75798C22759EBC60074A9D4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +123,13 @@
 		D75798CD2759EBC60074A9D4 /* Bitakhon iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D75798CE2759EBC70074A9D4 /* Bitakhon_iOSApp.swift */,
-				D75798D02759EBC70074A9D4 /* ContentView.swift */,
+				D75798DD2759ED960074A9D4 /* Application */,
 				D75798D22759EBC80074A9D4 /* Assets.xcassets */,
+				D75798DC2759ED860074A9D4 /* Models */,
 				D75798D42759EBC80074A9D4 /* Preview Content */,
+				D75798E52759EE070074A9D4 /* Reusable Views & Styles */,
+				D75798DE2759EDA30074A9D4 /* Service */,
+				D75798E22759EDD40074A9D4 /* Views */,
 			);
 			path = "Bitakhon iOS";
 			sourceTree = "<group>";
@@ -65,6 +140,235 @@
 				D75798D52759EBC80074A9D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D75798DC2759ED860074A9D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7140B4C275DEB3500661B53 /* Protocols */,
+				D7A0FE08275C8E2600805E9F /* ServerResponse */,
+				D7A0FE07275C8E1500805E9F /* Enums */,
+				D7A0FE03275C8C3400805E9F /* Error */,
+				D7A0FDF8275C898B00805E9F /* User */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D75798DD2759ED960074A9D4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D75798E12759EDB80074A9D4 /* Utils */,
+				D75798E02759EDB10074A9D4 /* Constants */,
+				D75798DF2759EDAB0074A9D4 /* Extensions */,
+				D75798CE2759EBC70074A9D4 /* Bitakhon_iOSApp.swift */,
+				D75798EF2759F0C00074A9D4 /* DependencyInjection.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D75798DE2759EDA30074A9D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D75798F8275A23020074A9D4 /* API */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D75798DF2759EDAB0074A9D4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0FE0C275C90E600805E9F /* BT+DictionaryEncoder.swift.swift */,
+				D73A4A842765D1720063CD68 /* BT+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D75798E02759EDB10074A9D4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0FE01275C8C2B00805E9F /* BTError.swift */,
+				D7A0FE16275C9A3400805E9F /* Typealiases.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D75798E12759EDB80074A9D4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D75798EB2759F0800074A9D4 /* CoreDependency.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D75798E22759EDD40074A9D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D75798E42759EDF90074A9D4 /* Flows */,
+				D75798E32759EDF00074A9D4 /* Rows */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D75798E32759EDF00074A9D4 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		D75798E42759EDF90074A9D4 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				D75798E92759EE910074A9D4 /* Onboarding */,
+				D75798E72759EE550074A9D4 /* Home */,
+				D75798E62759EE300074A9D4 /* Settings */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		D75798E52759EE070074A9D4 /* Reusable Views & Styles */ = {
+			isa = PBXGroup;
+			children = (
+				D73A4A7E2765CAAA0063CD68 /* Modifiers */,
+				D75798F1275A1E4C0074A9D4 /* TextField */,
+			);
+			path = "Reusable Views & Styles";
+			sourceTree = "<group>";
+		};
+		D75798E62759EE300074A9D4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D75798E72759EE550074A9D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D75798E82759EE6D0074A9D4 /* EmergencyView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D75798E82759EE6D0074A9D4 /* EmergencyView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EmergencyView;
+			sourceTree = "<group>";
+		};
+		D75798E92759EE910074A9D4 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D75798EA2759EEA00074A9D4 /* Login */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D75798EA2759EEA00074A9D4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D75798D02759EBC70074A9D4 /* LoginView.swift */,
+				D75798ED2759F0A20074A9D4 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D75798F1275A1E4C0074A9D4 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				D75798F3275A1E6D0074A9D4 /* Views */,
+				D75798F2275A1E660074A9D4 /* Styles */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		D75798F2275A1E660074A9D4 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				D75798F4275A1E970074A9D4 /* Textfield+Style.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		D75798F3275A1E6D0074A9D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D75798F6275A1FD40074A9D4 /* BTTextField.swift */,
+				D73A4A822765CC930063CD68 /* BTSecureField.swift.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D75798F8275A23020074A9D4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D75798FB275A231B0074A9D4 /* Res */,
+				D75798FA275A23150074A9D4 /* Req */,
+				D75798F9275A230C0074A9D4 /* Layer */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D75798F9275A230C0074A9D4 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0FDFB275C8B3A00805E9F /* APIConstants.swift */,
+				D7A0FDFD275C8B4C00805E9F /* APIClient.swift */,
+				D7A0FDFF275C8BF800805E9F /* Networking.swift */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		D75798FA275A23150074A9D4 /* Req */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0FE12275C959D00805E9F /* LoginRes.swift */,
+			);
+			path = Req;
+			sourceTree = "<group>";
+		};
+		D75798FB275A231B0074A9D4 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0FE14275C95D000805E9F /* LoginReq.swift.swift */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		D7A0FDF8275C898B00805E9F /* User */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0FDF9275C8A7200805E9F /* UserRepository.swift */,
+				D7A0FE0E275C951700805E9F /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		D7A0FE03275C8C3400805E9F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				D7140B49275DE54200661B53 /* ErrorInfo.swift */,
+				D7A0FE04275C8CAB00805E9F /* BTDynamicError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		D7A0FE07275C8E1500805E9F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D75798FD275A23380074A9D4 /* SignStatus.swift */,
+				D7A0FE10275C956700805E9F /* LoginMethod.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		D7A0FE08275C8E2600805E9F /* ServerResponse */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0FE09275C8E3800805E9F /* ServerResponse.swift */,
+			);
+			path = ServerResponse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +441,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D75798D12759EBC70074A9D4 /* ContentView.swift in Sources */,
+				D7A0FE11275C956700805E9F /* LoginMethod.swift in Sources */,
+				D75798FE275A23380074A9D4 /* SignStatus.swift in Sources */,
+				D7A0FE17275C9A3400805E9F /* Typealiases.swift in Sources */,
+				D75798EE2759F0A20074A9D4 /* LoginViewModel.swift in Sources */,
+				D7A0FE15275C95D000805E9F /* LoginReq.swift.swift in Sources */,
+				D7A0FDFA275C8A7200805E9F /* UserRepository.swift in Sources */,
+				D7A0FE00275C8BF800805E9F /* Networking.swift in Sources */,
+				D7A0FE0A275C8E3800805E9F /* ServerResponse.swift in Sources */,
+				D7140B4E275DEBAF00661B53 /* Alertable.swift in Sources */,
+				D75798EC2759F0800074A9D4 /* CoreDependency.swift in Sources */,
+				D75798F02759F0C00074A9D4 /* DependencyInjection.swift in Sources */,
+				D7A0FE0F275C951700805E9F /* User.swift in Sources */,
+				D73A4A832765CC930063CD68 /* BTSecureField.swift.swift in Sources */,
+				D7A0FE05275C8CAB00805E9F /* BTDynamicError.swift in Sources */,
+				D73A4A852765D1720063CD68 /* BT+String.swift in Sources */,
+				D7140B4A275DE54200661B53 /* ErrorInfo.swift in Sources */,
+				D7A0FDFE275C8B4C00805E9F /* APIClient.swift in Sources */,
+				D7A0FE02275C8C2B00805E9F /* BTError.swift in Sources */,
+				D7A0FE0D275C90E600805E9F /* BT+DictionaryEncoder.swift.swift in Sources */,
+				D73A4A812765CACB0063CD68 /* DoneAlert.swift.swift in Sources */,
+				D7A0FDFC275C8B3A00805E9F /* APIConstants.swift in Sources */,
+				D7A0FE13275C959D00805E9F /* LoginRes.swift in Sources */,
+				D75798D12759EBC70074A9D4 /* LoginView.swift in Sources */,
 				D75798CF2759EBC70074A9D4 /* Bitakhon_iOSApp.swift in Sources */,
+				D75798F7275A1FD40074A9D4 /* BTTextField.swift in Sources */,
+				D75798F5275A1E970074A9D4 /* Textfield+Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +597,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bitakhon iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = WD3X4UBG9R;
+				DEVELOPMENT_TEAM = 83B976XZXR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -277,6 +605,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +627,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bitakhon iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = WD3X4UBG9R;
+				DEVELOPMENT_TEAM = 83B976XZXR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -306,6 +635,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
