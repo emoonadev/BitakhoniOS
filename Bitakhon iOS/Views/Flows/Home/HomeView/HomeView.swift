@@ -9,8 +9,26 @@
 import SwiftUI
 
 struct HomeView: View {
+
+    @EnvironmentObservedResolve var viewModel: HomeViewModel
+
+    // MARK: Properties
+
+    // MARK: - View
+
     var body: some View {
-        Text("Main screen")
+        VStack {
+            Button(
+                    action: {
+                        viewModel.createEmergency()
+                    },
+                    label: {
+                        Text("Start emergency")
+                    }
+            ).doneAlert(item: $viewModel.currentError)
+        }.onAppear {
+            viewModel.checkLocationPermissionAndActiveEmergencies()
+        }.handleNavigation($viewModel.navigationDirection)
     }
 }
 

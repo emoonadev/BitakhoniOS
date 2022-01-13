@@ -5,6 +5,11 @@
 import Foundation
 
 enum NavigationDirection: Equatable {
+
+    static func ==(lhs: NavigationDirection, rhs: NavigationDirection) -> Bool {
+        false
+    }
+
     case back
     case forward(destination: NavigationDestination, style: NavigationStyle)
 }

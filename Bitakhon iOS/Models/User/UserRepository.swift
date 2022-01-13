@@ -34,16 +34,17 @@ extension UserRepository {
 
     func createUser(email: String, password: String) async throws {
         let loginRes: LoginRes = try await apiClient.perform(.createUser(.init(email: email, fullName: "", password: password, loginMethod: .email)))
-        saveUserData(loginRes)
+        saveUserData(loginRes, password: password)
     }
 
     func logUser(email: String, password: String) async throws {
         let loginRes: LoginRes = try await apiClient.perform(.loginUser(email: email, password: password))
-        saveUserData(loginRes)
+        saveUserData(loginRes, password: password)
     }
 
-    func saveUserData(_ res: LoginRes) {
+    func saveUserData(_ res: LoginRes, password: String) {
         KeychainManager.userAccessToken = res.accessToken
+        KeychainManager.userPassword = password
         UserDefaultsManager.loggedUser = res.user
     }
     

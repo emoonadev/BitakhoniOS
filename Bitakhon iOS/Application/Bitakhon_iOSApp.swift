@@ -9,11 +9,27 @@ import SwiftUI
 
 @main
 struct Bitakhon_iOSApp: App {
+
+    @Resolve var backgroundTasks: BackgroundTasksService
+    @Environment(\.scenePhase) var scenePhase
     @Resolve var initialCoordinator: InitialViewCoordinator
+
 
     var body: some Scene {
         WindowGroup {
-			initialCoordinator.initialView()
+            initialCoordinator.initialView()
+                    .onOpenURL { url in }
+        }.onChange(of: scenePhase) { newScenePhase in
+            switch scenePhase {
+                case .background:
+                    break
+                case .inactive:
+                    backgroundTasks.runRequiredTasks()
+                case .active:
+                    break
+                @unknown default:
+                    break
+            }
         }
     }
 }

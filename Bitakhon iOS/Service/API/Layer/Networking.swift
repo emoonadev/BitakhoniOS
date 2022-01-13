@@ -80,7 +80,10 @@ class Networking: NetworkingService {
 				case .success(let (response, data)):
 					print("<-- \((response as? HTTPURLResponse)?.statusCode ?? -1) \(response.url?.absoluteString ?? ""): \(String(data: data, encoding: .utf8))")
 					do {
-						let values = try JSONDecoder().decode(T.self, from: data)
+						let decoder = JSONDecoder()
+						decoder.dateDecodingStrategy = .iso8601
+
+						let values = try decoder.decode(T.self, from: data)
 						guard let statusCode = (response as? HTTPURLResponse)?.statusCode, 200 ..< 299 ~= statusCode else {
 							if let customError = self.handleCustomErrors {
 								completion(response, .failure(customError((response as? HTTPURLResponse)?.statusCode ?? values.code, values.message)))
@@ -92,7 +95,7 @@ class Networking: NetworkingService {
 
 						completion(response, .success(values))
 					} catch {
-						completion(response, .failure(BTDynamicError(title: "Json parse error", description: error.localizedDescription, code: -1)))
+						completion(response, .failure(BTDynamicError(title: "Json parse error", description: String(describing: error), code: -1)))
 					}
 
 				case .failure(let error):

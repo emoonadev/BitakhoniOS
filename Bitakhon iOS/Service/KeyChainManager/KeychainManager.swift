@@ -6,4 +6,5 @@ import Foundation
 
 class KeychainManager {
     @KeychainStorage(key: "BTKAccessToken") static var userAccessToken: String?
+    @KeychainStorage(key: "BTKUserPassword") static var userPassword: String?
 }

@@ -8,43 +8,45 @@
 import SwiftUI
 
 struct LoginView: View {
-	@EnvironmentObservedResolve var viewModel: LoginViewModel
+    @EnvironmentObservedResolve var viewModel: LoginViewModel
 
-	// MARK: View properties
+    // MARK: View properties
 
-	@State private var username: String = ""
-	@State private var password: String = ""
-	@State private var isAlertPresented = false
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var isAlertPresented = false
 
-	// MARK: View
+    // MARK: View
 
-	var body: some View {
-		VStack {
-			Spacer()
+    var body: some View {
+        VStack {
+            Spacer()
 
-			BTTextField(placeholder: "Email or phone number", text: $username)
-			BTSecureField(placeholder: "Password", text: $password)
+            BTTextField(placeholder: "Email or phone number", text: $username)
+                    .keyboardType(.emailAddress)
+					.backport.neverAutocapitalization()
 
-			Button(viewModel.signStatus.title) {
-				viewModel.logUser(with: username, password: password)
-			}
+            BTSecureField(placeholder: "Password", text: $password)
+            Button(viewModel.signStatus.title) {
+                viewModel.logUser(with: username, password: password)
+            }
 
-			Spacer()
+            Spacer()
 
-			Button(viewModel.switchSignStatusTitle) {
-				viewModel.toggleSignStatus()
-			}
-			.doneAlert(item: $viewModel.currentError)
-			.handleNavigation($viewModel.navigationDirection)
-		}
-		.padding()
-	}
+            Button(viewModel.switchSignStatusTitle) {
+                viewModel.toggleSignStatus()
+            }
+                    .doneAlert(item: $viewModel.currentError)
+                    .handleNavigation($viewModel.navigationDirection)
+        }
+                .padding()
+    }
 }
 
 // MARK: - Preview
 
 struct LoginView_Previews: PreviewProvider {
-	static var previews: some View {
-		LoginView()
-	}
+    static var previews: some View {
+        LoginView()
+    }
 }
