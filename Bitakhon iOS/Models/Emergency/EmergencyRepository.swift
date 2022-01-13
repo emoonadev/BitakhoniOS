@@ -25,7 +25,7 @@ class EmergencyRepository: EmergencyRepositoryService {
 extension EmergencyRepository {
 
     func createOrUpdate(coordinate: BTCLLocationCoordinate2D, status: Emergency.Status) async throws -> Emergency {
-        let res: CreateOrUpdateEmergencyRes = try await apiClient.perform(.createEmergency(.init(status: .opened, location: coordinate)))
+        let res: CreateOrUpdateEmergencyRes = try await apiClient.perform(.createEmergency(.init(status: status, location: coordinate)))
         return res.emergency
     }
 

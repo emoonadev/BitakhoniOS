@@ -25,10 +25,14 @@ struct HomeView: View {
                     label: {
                         Text("Start emergency")
                     }
-            ).doneAlert(item: $viewModel.currentError)
-        }.onAppear {
-            viewModel.checkLocationPermissionAndActiveEmergencies()
-        }.handleNavigation($viewModel.navigationDirection)
+            )
+
+            Spacer()
+        }
+                .padding()
+                .onAppear {
+                    viewModel.checkLocationPermissionAndActiveEmergencies()
+                }.handleNavigation($viewModel.navigationDirection).doneAlert(item: $viewModel.currentError)
     }
 }
 
