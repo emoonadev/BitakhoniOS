@@ -15,7 +15,7 @@ class LoginViewModel: ObservableObject {
 
     @Published var signStatus: SignStatus = .login
     @Published var currentError: ErrorInfo?
-    @Published var navigationDirection: NavigationDirection?
+    @Published var navigationDirection: NavigationDirection<OnboardingFlowDestination>?
 
 
     init(userRepository: UserRepositoryService) {

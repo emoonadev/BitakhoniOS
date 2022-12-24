@@ -9,7 +9,7 @@ class EmergencyViewModel: ObservableObject {
 
     @Published var emergency: Emergency?
     @Published var currentError: ErrorInfo?
-    @Published var navigationDirection: NavigationDirection?
+    @Published var navigationDirection: NavigationDirection<OnboardingFlowDestination>?
 
 
     init(emergencyRepository: EmergencyRepositoryService) {

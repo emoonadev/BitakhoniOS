@@ -21,7 +21,7 @@ class InitialViewCoordinator {
 extension InitialViewCoordinator {
 
     func initialView() -> some View {
-        userRepository.user == nil ? NavigationDestination.login.view : NavigationDestination.home.view
+        userRepository.user == nil ? OnboardingFlowDestination.login.view : OnboardingFlowDestination.home.view
     }
 
 }

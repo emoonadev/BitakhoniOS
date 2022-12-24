@@ -13,7 +13,7 @@ class HomeViewModel: ObservableObject {
 
     @Published var currentError: ErrorInfo?
     @Published var isLoading: Bool = false
-    @Published var navigationDirection: NavigationDirection?
+    @Published var navigationDirection: NavigationDirection<HomeFlowDestination>?
 
 
     init(locationManager: LocationManagerService, emergencyRepository: EmergencyRepositoryService) {

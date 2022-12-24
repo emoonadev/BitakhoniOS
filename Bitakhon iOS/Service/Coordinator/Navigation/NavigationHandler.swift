@@ -3,17 +3,27 @@
 //
 
 import SwiftUI
+import Combine
 
-struct NavigationHandler: ViewModifier {
+protocol NavigationCoordinator {
+    associatedtype Destination: RouteCoordinator
+    var direction: PassthroughSubject<NavigationDirection<Destination>, Never> { get }
+}
 
-    @Binding var navigationDirection: NavigationDirection?
-    @State private var destination: NavigationDestination?
+extension NavigationCoordinator {
+    func callAsFunction() -> PassthroughSubject<NavigationDirection<Destination>, Never> { direction }
+}
+
+struct NavigationHandler<Destination: RouteCoordinator>: ViewModifier {
+
+    @Binding var navigationDirection: NavigationDirection<Destination>?
+    @State private var destination: Destination?
     @State private var sheetActive = false
     @State private var fullScreenCoverActive = false
     @State private var linkActive = false
     @Environment(\.presentationMode) var presentation // Todo deprecated iOS 15
     @Environment(\.dismiss) var dismiss
-    var onDismiss: ((NavigationDestination) -> ())?
+    var onDismiss: ((Destination) -> ())?
 
 
     func body(content: Content) -> some View {
@@ -68,7 +78,7 @@ struct NavigationHandler: ViewModifier {
     }
 
     @ViewBuilder
-    private func buildDestination(_ destination: NavigationDestination?) -> some View {
+    private func buildDestination(_ destination: Destination?) -> some View {
         if let destination = destination {
             destination.view
         } else {
@@ -83,7 +93,7 @@ struct NavigationHandler: ViewModifier {
 
 extension View {
 
-    func handleNavigation(_ navigationDirection: Binding<NavigationDirection?>, onDismiss: ((NavigationDestination) -> ())? = nil) -> some View {
+    func handleNavigation<Destination: RouteCoordinator>(_ navigationDirection: Binding<NavigationDirection<Destination>?>, onDismiss: ((Destination) -> ())? = nil) -> some View {
         modifier(NavigationHandler(navigationDirection: navigationDirection, onDismiss: onDismiss))
     }
 
