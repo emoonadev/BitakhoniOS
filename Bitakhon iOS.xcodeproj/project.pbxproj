@@ -253,7 +253,7 @@
 				D75798D42759EBC80074A9D4 /* Preview Content */,
 				D75798E52759EE070074A9D4 /* Reusable Views & Styles */,
 				D75798DE2759EDA30074A9D4 /* Service */,
-				D75798E22759EDD40074A9D4 /* Views */,
+				D75798E22759EDD40074A9D4 /* Features */,
 			);
 			path = "Bitakhon iOS";
 			sourceTree = "<group>";
@@ -334,30 +334,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		D75798E22759EDD40074A9D4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D75798E42759EDF90074A9D4 /* Flows */,
-				D75798E32759EDF00074A9D4 /* Rows */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D75798E32759EDF00074A9D4 /* Rows */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Rows;
-			sourceTree = "<group>";
-		};
-		D75798E42759EDF90074A9D4 /* Flows */ = {
+		D75798E22759EDD40074A9D4 /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				D75798E92759EE910074A9D4 /* Onboarding */,
 				D75798E72759EE550074A9D4 /* Home */,
-				D75798E62759EE300074A9D4 /* Settings */,
 			);
-			path = Flows;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		D75798E52759EE070074A9D4 /* Reusable Views & Styles */ = {
@@ -368,13 +351,6 @@
 				6D57CA865778AD4495A2CBEF /* Backport.swift */,
 			);
 			path = "Reusable Views & Styles";
-			sourceTree = "<group>";
-		};
-		D75798E62759EE300074A9D4 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		D75798E72759EE550074A9D4 /* Home */ = {
@@ -759,7 +735,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bitakhon iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 83B976XZXR;
+				DEVELOPMENT_TEAM = M59383PR64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bitakhon-iOS-Info.plist";
@@ -790,7 +766,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bitakhon iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 83B976XZXR;
+				DEVELOPMENT_TEAM = M59383PR64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bitakhon-iOS-Info.plist";
