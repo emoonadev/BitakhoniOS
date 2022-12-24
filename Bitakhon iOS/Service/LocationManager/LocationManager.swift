@@ -51,7 +51,7 @@ extension LocationManager {
 
 
     func getCurrentCoordinate() async -> CLLocationCoordinate2D {
-        try await withCheckedContinuation { continuation in
+        await withCheckedContinuation { continuation in
             coordinateContinuationHandler = continuation
             locationManager.startUpdatingLocation()
         }

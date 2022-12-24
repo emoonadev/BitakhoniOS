@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D57C0B083ABE1AB9B940B11 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57C5A931A19DD889B3A930 /* Storage.swift */; };
-		6D57C21C2E2DBA2C3384A724 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57C84FD251DB878332E78C /* NavigationDestination.swift */; };
+		6D57C21C2E2DBA2C3384A724 /* OnboardingFlowDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57C84FD251DB878332E78C /* OnboardingFlowDestination.swift */; };
 		6D57C317A3DB63A9D22DB5BC /* EmergencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57C825010C20D822A295D3 /* EmergencyRepository.swift */; };
 		6D57C3A516285BC4929BA59C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57C1F81335DAE2978851CB /* HomeView.swift */; };
 		6D57C45B45DB33158C3630E6 /* Backport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57CA865778AD4495A2CBEF /* Backport.swift */; };
@@ -70,7 +70,7 @@
 		6D57C67D0DD1CFCD4E3FE234 /* LoginReq.swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginReq.swift.swift; sourceTree = "<group>"; };
 		6D57C748D9F75F6353B44136 /* LoginRes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRes.swift; sourceTree = "<group>"; };
 		6D57C825010C20D822A295D3 /* EmergencyRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyRepository.swift; sourceTree = "<group>"; };
-		6D57C84FD251DB878332E78C /* NavigationDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
+		6D57C84FD251DB878332E78C /* OnboardingFlowDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingFlowDestination.swift; sourceTree = "<group>"; };
 		6D57C8E9BE0490D0142B8EE0 /* EmergencyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyViewModel.swift; sourceTree = "<group>"; };
 		6D57CA276654297B1D7A352C /* BT+CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BT+CLLocationCoordinate2D.swift"; sourceTree = "<group>"; };
 		6D57CA71132A03910909ABC4 /* BackgroundTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTasks.swift; sourceTree = "<group>"; };
@@ -376,7 +376,7 @@
 		D75798E92759EE910074A9D4 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				6D57C84FD251DB878332E78C /* NavigationDestination.swift */,
+				6D57C84FD251DB878332E78C /* OnboardingFlowDestination.swift */,
 				D75798EA2759EEA00074A9D4 /* Login */,
 			);
 			path = Onboarding;
@@ -590,7 +590,7 @@
 				6D57CD11190DE1FFE6247FF3 /* KeychainManager.swift in Sources */,
 				D728EEFF29576F3E0032F429 /* HomeFlowDestination.swift in Sources */,
 				6D57C78FA3BB68D87CEA8B01 /* InitialViewCoordinator.swift in Sources */,
-				6D57C21C2E2DBA2C3384A724 /* NavigationDestination.swift in Sources */,
+				6D57C21C2E2DBA2C3384A724 /* OnboardingFlowDestination.swift in Sources */,
 				6D57C9CD91AAAD59E6EA16AB /* NavigationHandler.swift in Sources */,
 				6D57C66AABB2B2473535FA07 /* NavigationDirection.swift in Sources */,
 				6D57C9946E6065A4AA2B4670 /* NavigationStyle.swift in Sources */,
